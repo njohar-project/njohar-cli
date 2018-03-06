@@ -1,0 +1,27 @@
+{
+  "name": "njohar-cli",
+  "version": "0.0.0",
+  "description": "Command line interface for Njohar Project",
+  "main": "index.js",
+  "repository": "https://github.com/njohar-project/njohar-cli",
+  "author": "Budi Adiono",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf bin && tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "njohar": "bin/njohar.js",
+    "njohar-create-api": "bin/njohar-create.js"
+  },
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.9.0",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "@types/node": "^9.4.6",
+    "chalk": "^2.3.2",
+    "commander": "^2.14.1"
+  }
+}
